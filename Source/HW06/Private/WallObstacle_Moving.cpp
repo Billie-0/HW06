@@ -36,7 +36,7 @@ void AWallObstacle_Moving::Tick(float DeltaTime)
 
 	RunningTime += DeltaTime;
 
-	// Sine ±â¹İ Áøµ¿ (¹üÀ§: -1 ~ +1)
+	// Sine ê¸°ë°˜ ì›€ì§ì„ ê³„ì‚°
 	float DeltaOffset = FMath::Sin(RunningTime * MoveSpeed) * (MoveRange * 0.5f);
 
 	FVector NewLocation = StartLocation;
